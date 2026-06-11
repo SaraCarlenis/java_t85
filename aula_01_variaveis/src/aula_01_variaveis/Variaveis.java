@@ -10,8 +10,8 @@ public class Variaveis {
 		int num1 = 10;
 		int num2 = 5;
 		int somatotal = num1 + num2;
-		float num3, num4;
-		
+		float num3, num4;	
+		String nome;
 		
 		System.out.println("O primeiro número é: " + num1);
 		System.out.println("O segundo número é: " + num2);
@@ -25,6 +25,12 @@ public class Variaveis {
 		num4 = leia.nextFloat();
 		
 		System.out.printf("%.2f x %.2f = %.2f ", num3, num4, num3 * num4);
+		
+		System.out.print("\nDigite o seu nome: ");
+		leia.skip("\\R?");
+		nome = leia.next();
+		
+		System.out.println("Olá, " + nome + " seja bem-vinda(a)!");
 	}
 
 }
