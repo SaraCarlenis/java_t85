@@ -10,6 +10,9 @@ public class CalculoDiferenca {
 		float n1, n2, n3, n4;
 		
 		//Dados de entrada
+		
+		System.out.println("---- CALCULANDO DIFERENÇAS ENTRE OS NÚMEROS DIGITADO ----");
+
 		System.out.println("\nDigite um número: ");
 		n1 = leia.nextFloat();
 		
@@ -25,7 +28,10 @@ public class CalculoDiferenca {
 		//Calculando diferença
 		float resultado = (n1 * n2) - (n3 * n4);
 		
-		System.out.printf("\nDiferenças dos números digitados são: %.2f", resultado);
+        System.out.printf("Os números digitado foram:\nNúmero1 = %.2f \nNúmero2 = %.2f \nNúmero3 = %.2f \nNúmero4 %.2f", n1, n2, n3, n4);
+        System.out.printf("\nDiferença = (%.2f * %.2f) - (%.2f * %.2f)\n", n1, n2, n3, n4);
+		
+		System.out.printf("\nDiferenças dos números digitados: %.2f", resultado);
 		
 		leia.close();
 	}

@@ -29,7 +29,6 @@ public class CalculaMedia {
 		media = (nota1 + nota2 + nota3 + nota4) / 4;
 		System.out.printf("A média das notas é: %.2f", media);
 		
-		
 		//Atividade adicional, verificando se o aluno foi aprovado ou não
 		if(media < 5) {
 			System.out.println("\nReprovado!");
@@ -37,8 +36,6 @@ public class CalculaMedia {
 			System.out.println("\nAprovado!");
 		}
 		
-		
 		leia.close();
 	}
-
 }

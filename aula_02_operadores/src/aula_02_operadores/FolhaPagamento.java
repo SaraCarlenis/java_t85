@@ -12,6 +12,9 @@ public class FolhaPagamento {
 		
 		
 		//Dados de entrada
+		System.out.println("Digite o nome do funcionário: ");
+        String nome = leia.nextLine();
+        
 		System.out.println("\nDigite o sálario bruto: R$");
 		salarioBruto = leia.nextFloat();
 		
@@ -28,7 +31,13 @@ public class FolhaPagamento {
 		salarioLiquido = salarioBruto + adicionalNoturno + (horasExtras * 5) - descontos;
 		
 		//Mostrando resultado total
-		System.out.printf("\nSálario Líquido: %.2f R$", salarioLiquido);
+		System.out.println("\n--- Holerite ---");
+        System.out.println("Funcionário: " + nome);
+        System.out.println("Salário Bruto: " + salarioBruto);
+        System.out.println("Adicional Noturno: " + adicionalNoturno);
+        System.out.println("Horas Extras" + horasExtras * 5);
+        System.out.println("Descontos: " + descontos);
+		System.out.printf("\nSálario Líquido: %.2f R$ ", salarioLiquido);
 		
 		leia.close();
 	}
