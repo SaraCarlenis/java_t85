@@ -45,9 +45,13 @@ public class CalculadoraSimples {
 		break;
 			
 		case 4:
-			float totalDivisao = num1 / num2;
-			System.out.printf("\nVocê selecionou a opção: %d \n%.1f / %.1f = %.1f", codigo, num1, num2, totalDivisao);
-		break;
+			if (num2 != 0) {
+				float totalDivisao = num1 / num2;
+                System.out.printf("\nVocê selecionou a opção: %d \\n%.1f * %.1f = %.1f", codigo, num1, num2, totalDivisao);
+            } else {
+                System.out.println("Erro: resto da divisão por ZERO não é permitido.");
+            }
+			break;
 			
 		default:
 			System.out.println("Ops, parece que você digitou uma opção invalida. Tente novamente!");
