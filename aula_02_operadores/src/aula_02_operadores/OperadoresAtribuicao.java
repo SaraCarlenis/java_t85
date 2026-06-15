@@ -16,10 +16,6 @@ public class OperadoresAtribuicao {
 		System.out.println("Atribuição com Multiplicação: " + (num1 *= 2));
 		System.out.println("Atribuição com Divisão: " + (num1 /= 2));
 		System.out.println("Atribuição com Módulo: " + (num1 %= 2));
-
-
-
-
 		
 	}
 
