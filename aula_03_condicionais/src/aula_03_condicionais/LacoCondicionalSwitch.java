@@ -58,6 +58,5 @@ public class LacoCondicionalSwitch {
 		System.out.printf("Opção: %d. \nQuantidade: %d. \nValor total: %.2f", opcao, quantidade, total);
 		
 		leia.close();
- 
 	}
 	}

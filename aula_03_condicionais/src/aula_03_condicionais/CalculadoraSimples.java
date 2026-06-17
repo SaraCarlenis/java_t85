@@ -3,10 +3,8 @@ package aula_03_condicionais;
 import java.util.Scanner;
 
 public class CalculadoraSimples {
-
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
-		
 		
 		System.out.println("***********Calculadora Básica*****************");
 		System.out.println("   Código            |          Operação      ");
@@ -58,6 +56,5 @@ public class CalculadoraSimples {
 		}
 		
 		leia.close();
- 
 	}
 }
