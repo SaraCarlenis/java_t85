@@ -29,7 +29,7 @@ public class AppBanco {
 			System.out.println("Digite o nome do cliente");
 			String nomeCliente = leia.nextLine();
 			fila.add(nomeCliente);
-			System.out.println("Cliente" + nomeCliente + "foi adicionado!");
+			System.out.println("Cliente " + nomeCliente + " foi adicionado!\n");
 			break;
 			
 		case 2:
@@ -48,7 +48,11 @@ public class AppBanco {
 			if(revisaoLista == null) {
 				System.out.println("A fila está vazia!");
 			}else {
-				System.out.println("Fila: " + revisaoLista);
+				System.out.println("Cliente atendido: " + revisaoLista);
+		        System.out.println("Fila atualizada:");
+		        for(String cliente : fila) {
+		            System.out.println(cliente);
+		        }
 			}
 			break;
 			
